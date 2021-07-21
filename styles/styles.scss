@@ -1,0 +1,49 @@
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan-1: hsl(186, 14%, 43%);
+$dark-grayish-cyan-2: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$light-grayish: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+	background-color: $light-grayish-cyan;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.logo {
+	margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+	background-color: $white;
+	height: 100px; // temporary
+	width: 100%;
+	border-radius: 2.5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
