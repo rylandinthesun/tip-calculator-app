@@ -38,9 +38,9 @@ body {
 
 .card {
   background-color: white;
-  height: 100px;
   width: 100%;
-  border-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,5 +55,188 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+  padding: 2.8rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+
+.card .input .label-wrapper label {
+  color: #5e7a7d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .label-wrapper .error-msg {
+  color: indianred;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card .input .input-text {
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 1.6rem;
+}
+
+.card .input .input-text:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.card .input .input-text::-webkit-input-placeholder {
+  color: #7f9c9f;
+}
+
+.card .input .input-text:-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.card .input .input-text::-ms-input-placeholder {
+  color: #7f9c9f;
+}
+
+.card .input .input-text::placeholder {
+  color: #7f9c9f;
+}
+
+.card .input .input-wrapper {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.card .input .input-wrapper img {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.5rem;
+}
+
+.card .input .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.card .input .btn-wrapper .btn {
+  width: 47%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 0.6rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .input .btn-wrapper .btn:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input .btn-wrapper .btn-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input .btn-wrapper .input-text {
+  width: 47%;
+}
+
+.card .output {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.card .output .line-wrapper .line-output .desc {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card .output .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card .output .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 1rem 0;
+  margin-top: 3.4rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .output .btn:hover {
+  background-color: #c5e4e7;
 }
 /*# sourceMappingURL=styles.css.map */
