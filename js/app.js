@@ -81,9 +81,11 @@ function setPeopleValue () {
 
 	if (peopleValue <= 0) {
 		errMsg.classList.add('show-error-msg');
+		peopleAmount.classList.add('input-text-error');
 	}
 	if (peopleValue >= 1) {
 		errMsg.classList.remove('show-error-msg');
+		peopleAmount.classList.remove('input-text-error');
 	}
 	calculateTip();
 }

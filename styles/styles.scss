@@ -103,6 +103,12 @@ body {
 			}
 		}
 
+		.input-text-error {
+			&:focus {
+				border: 2px solid indianred;
+			}
+		}
+
 		.input-wrapper {
 			position: relative;
 			padding-bottom: 2rem;
@@ -205,13 +211,21 @@ body {
 	}
 }
 
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	padding: 10px 0;
+	background-color: $white;
+
+	a {
+		color: $strong-cyan;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.card {
 		width: 78%;
-		flex-direction: row;
 		border-radius: 2.5rem;
-		align-items: stretch;
-		padding: 3.4rem;
 		gap: 1rem;
 		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
 
@@ -249,18 +263,32 @@ body {
 					margin: 0.5rem 0 2.4rem 0;
 
 					.value {
-						font-size: 4.2rem;
+						font-size: 4rem;
 						margin-left: 1rem;
 					}
 				}
 			}
 		}
 	}
+
+	.attribution {
+		background: transparent;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.card {
+		flex-direction: row;
+
+		align-items: stretch;
+		padding: 3.4rem;
+	}
 }
 
 @media screen and (min-width: 1185px) {
 	.card {
-		width: 64%;
+		// width: 64%;
 		.input {
 			.btn-wrapper {
 				grid-template-columns: 1fr 1fr 1fr;
