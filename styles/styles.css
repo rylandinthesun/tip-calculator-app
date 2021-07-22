@@ -93,6 +93,15 @@ body {
   color: indianred;
   font-weight: 700;
   font-size: 1.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card .input .label-wrapper .show-error-msg {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
 }
 
 .card .input .input-text {
@@ -152,7 +161,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.4rem;
   padding: 1rem 0 2rem 0;
 }
 
@@ -165,6 +174,7 @@ body {
   font-weight: 700;
   border-radius: 0.4rem;
   padding: 0.6rem 0;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -232,11 +242,84 @@ body {
   border-radius: 0.4rem;
   padding: 1rem 0;
   margin-top: 3.4rem;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .card .output .btn:hover {
   background-color: #c5e4e7;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 78%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 2.5rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 3.4rem;
+    gap: 1rem;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+  }
+  .card .input {
+    width: 105%;
+    padding: 0 3.5rem 1.5rem 1.5rem;
+  }
+  .card .input .line-wrapper {
+    padding: 1rem 0;
+  }
+  .card .input .btn-wrapper {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .card .input .btn-wrapper .btn {
+    width: 100%;
+  }
+  .card .input .btn-wrapper .input-text {
+    width: 100%;
+  }
+  .card .output {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+  }
+  .card .output .line-wrapper .line-output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+  .card .output .line-wrapper .line-output .value {
+    font-size: 4.2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1185px) {
+  .card {
+    width: 64%;
+  }
+  .card .input .btn-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card .output .line-wrapper .line-output .value {
+    font-size: 4.6rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
